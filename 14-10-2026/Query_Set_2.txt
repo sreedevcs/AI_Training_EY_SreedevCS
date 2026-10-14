@@ -1,0 +1,268 @@
+--1
+SELECT * FROM c
+
+--2
+select c.guest_name,c.city,c.hotel_name from c
+
+--3
+select c.guest_name,c.room_type,c.nights,c.booking_amount from c
+
+--4
+select c.id,c.guest_name,c.booking_status from c
+
+--5
+select * from c where c.city="Hyderabad"
+
+--6
+select * from c where c.city="Mumbai"
+
+--7
+select * from c where c.booking_status="Completed"
+
+--8
+select * from c where c.room_type="Suite"
+
+--9
+select * from c where c.room_type="Executive"
+
+--10
+select * from c where c.booking_amount>20000
+
+--11
+select * from c where c.room_rate>6000
+
+--12
+select * from c where c.nights>3
+
+--13
+select * from c where c.rating<4.2
+
+--14
+select * from c where c.booking_amount between 8000 and 25000
+
+--15
+select * from c where c.room_rate<4000
+
+--16
+select * from c where c.booking_status="Confirmed" and c.booking_amount>15000
+
+--17
+select * from c where c.city="Mumbai" and c.room_type="Suite"
+
+--18
+select * from c where c.nights>2 and c.rating>4.5
+
+--19
+select * from c where c.booking_status="Completed" and c.booking_amount>10000
+
+--20
+select * from c where c.room_type="Standard" and c.room_rate<3500
+
+--21
+select * from c where c.city="Mumbai" or c.city="Delhi"
+
+--22
+select * from c where c.city="Hyderabad" or c.city="Bengaluru"
+
+--23
+select * from c where c.room_type="Suite" or c.room_type="Executive"
+
+--24
+select * from c where c.booking_status="Completed" or c.booking_status="Confirmed"
+
+--25
+select * from c where c.city="Chennai" or c.city="Pune" or c.city="Kochi"
+
+--26
+select * from c
+order by c.booking_amount
+
+--27
+select * from c
+order by c.booking_amount desc
+
+--28
+select * from c
+order by c.rating desc
+
+--29
+select * from c
+order by c.nights desc
+
+--30
+select * from c
+order by c.city asc,c.booking_amount asc
+
+--31
+select count(1) as bookingcount from c 
+
+--32
+select count(1) as confirmedcount from c where c.booking_status="Confirmed"
+
+--33
+select count(1) as completedcount from c where c.booking_status="Completed"
+
+--34
+select count(1) as Suitecount from c where c.room_type="Suite"
+
+--35
+select count(1) as PuneCount from c where c.city="Pune"
+
+--36
+select c.city,count(1) as cnt 
+from c
+group by c.city
+
+--37
+select c.room_type,count(1) as cnt 
+from c
+group by c.room_type
+
+--38
+select c.booking_status,count(1) as cnt 
+from c
+group by c.booking_status
+
+--39
+select c.city,sum(c.booking_amount) as amt
+from c
+group by c.city
+
+--40
+select c.room_type,avg(c.booking_amount) as amt
+from c
+group by c.room_type
+
+--41
+select c.city,avg(c.rating) as avg_rating
+from c
+group by c.city
+
+--42
+select c.city,sum(c.nights) as tot_nights
+from c
+group by c.city
+
+--43
+select c.room_type,avg(c.room_rate) as avg_rate
+from c
+group by c.room_type
+
+--44
+select c.city,sum(c.booking_amount) as bk_amt
+from c
+where c.booking_status="Confirmed"
+group by c.city
+
+--45
+select c.city,count(1) as completedcount
+from c
+where c.booking_status="Completed"
+group by c.city
+
+--46
+select c.city,avg(c.booking_amount) as avgbookamt
+from c
+where c.booking_amount>8000
+group by c.city
+
+--47
+select c.room_type, sum(c.nights) as totalnights
+from c
+group by c.room_type
+
+--48
+select top 5 c.id,c.booking_amount
+from c 
+order by c.booking_amount desc
+
+--49
+select top 3 c.id,c.rating
+from c 
+order by c.rating desc
+
+--50
+
+select c.id,c.booking_status,c.booking_amount
+from c
+where c.booking_status="Confirmed"
+order by c.booking_amount desc
+
+--51
+select c.id,c.rating,c.booking_amount
+from c
+where c.booking_amount>15000 and c.rating>4.5
+order by c.booking_amount desc
+
+--52
+select c.id,c.city,c.nights
+from c
+where (c.city="Hyderabad" or c.city="Bengaluru") and c.nights>2
+
+--53
+select c.id,c.booking_status,c.rating
+from c
+where c.booking_status="Cancelled"
+order by c.rating 
+
+--54
+select c.guest_name,c.city,c.hotel_name,c.booking_amount,c.rating
+from c
+where c.booking_amount>20000
+
+--55
+select c.id,c.room_type,c.room_rate
+from c
+where c.room_rate>=6000 and c.room_type="Executive"
+order by c.room_rate desc
+
+--56
+select c.city,sum(c.booking_amount) as Totalbookingamount
+from c
+group by c.city
+
+--57
+select top 1 c.id,c.booking_amount
+from c
+order by c.booking_amount desc
+
+--58
+select top 1 c.id,c.rating
+from c
+order by c.rating desc
+
+--59
+select c.room_type,avg(c.booking_amount) as Avgbookingamount
+from c
+group by c.room_type
+
+--60
+select c.city,sum(c.nights) as totalnights
+from c
+group by c.city
+
+--61
+select count(1) as cancelledcount
+from c
+where c.booking_status="Cancelled"
+
+--62
+select c.city, count(1) as completedbook
+from c
+where c.booking_status="Completed"
+group by c.city
+
+--63
+select top 1 c.hotel_name
+from c
+order by c.booking_amount desc
+
+--64
+select c.room_type,avg(c.room_rate) as avgroomrate
+from c
+group by c.room_type
+
+--65
+select value sum(c.booking_amount)
+from c
+where c.booking_status="Confirmed"

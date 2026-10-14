@@ -1,0 +1,285 @@
+--1
+SELECT * FROM c
+
+--2
+SELECT c.station_name,c.city,c.status FROM c
+
+--3
+SELECT c.station_name,c.capacity_kw,c.daily_sessions,c.revenue from c
+
+--4
+SELECT c.id,c.station_name from c
+
+--5
+select c.id,c.station_name from c where c.city="Hyderabad"
+
+--6
+select c.id,c.station_name from c where c.city="Mumbai"
+
+--7
+select c.id,c.station_name from c where c.status="Maintenance"
+
+--8
+select c.id,c.station_name,c.station_type from c where c.station_type="Fast"
+
+--9
+select c.id,c.station_name,c.connector_type from c where c.connector_type="CCS2"
+
+--10
+select c.id,c.station_name,c.capacity_kw from c where c.capacity_kw>100
+
+--11
+select c.id,c.station_name,c.revenue from c where c.revenue>15000
+
+--12
+select c.id,c.station_name,c.daily_sessions from c where c.daily_sessions>40
+
+--13
+select c.id,c.station_name,c.uptime_percent from c where c.uptime_percent<96
+
+--14
+select c.id,c.station_name,c.capacity_kw from c where c.capacity_kw between 50 and 120
+
+--15
+select c.id,c.station_name,c.revenue from c where c.revenue<10000
+
+--16
+select c.id,c.station_name,c.station_type,c.status 
+from c 
+where c.station_type="Fast" and c.status="Active"
+
+--17
+select c.id,c.station_name,c.city,c.revenue
+from c 
+where c.city="Hyderabad" and c.revenue>10000
+
+--18
+select c.id,c.station_name,c.capacity_kw,c.daily_sessions
+from c 
+where c.capacity_kw>100 and c.daily_sessions>40
+
+--19
+select c.id,c.station_name,c.uptime_percent,c.status
+from c 
+where c.uptime_percent>97 and c.status="Active"
+
+--20
+select c.id,c.station_name,c.station_type,c.revenue
+from c 
+where c.station_type="Standard" and c.revenue<10000
+
+--21
+select c.id,c.station_name,c.city
+from c 
+where c.city="Hyderabad" or c.city="Bengaluru"
+
+--22
+select c.id,c.station_name,c.zone
+from c 
+where c.zone="South" or c.zone="North"
+
+--23
+select c.id,c.station_name,c.station_type,c.revenue
+from c 
+where c.station_type="Fast" or c.revenue>20000
+
+--24
+select c.id,c.station_name,c.city
+from c 
+where c.city="Mumbai" or c.city="Delhi" or c.city="Chennai"
+
+--25
+select c.id,c.station_name,c.revenue
+from c
+order by c.revenue
+
+--26
+select c.id,c.station_name,c.revenue
+from c
+order by c.revenue desc
+
+--27
+select c.id,c.station_name,c.daily_sessions
+from c
+order by c.daily_sessions desc
+
+--28
+select c.id,c.station_name,c.uptime_percent
+from c
+order by c.uptime_percent
+
+--29
+select c.id,c.station_name,c.city,c.revenue
+from c
+order by c.city ASC, c.revenue ASC
+
+
+--30
+select value count (1) from c
+
+--31
+select value count(1)
+from c
+where c.status="Active"
+
+
+--32
+select value count(1)
+from c
+where c.station_type="Fast"
+
+--33
+select value count(1)
+from c
+where c.city="Pune"
+
+--34
+select value count(1)
+from c
+where c.revenue>15000
+
+--35
+select c.city, count(1) as count_of_stations
+from c
+group by c.city
+
+--36
+select c.station_type, count(1) as count_of_stations
+from c
+group by c.station_type
+
+--37
+select c.status, count(1) as count_of_stations
+from c
+group by c.status
+
+--38
+select c.city, sum(c.revenue) as Total_Revenue
+from c
+group by c.city
+
+--39
+select c.station_type, avg(c.revenue) as Average_Revenue
+from c
+group by c.station_type
+
+--40
+select c.city,avg(c.uptime_percent) as AvgUptimePercent
+from c
+group by c.city
+
+--41
+select c.city,sum(c.daily_sessions) as TotalDailySessions
+from c
+group by c.city
+
+--42
+select c.station_type,avg(c.capacity_kw) as AvgChargeCapacity
+from c
+group by c.station_type
+
+--43
+
+select c.city,sum(c.revenue) as Total_Revenue
+from c
+where c.status="Active"
+group by c.city
+
+--44
+select c.city,count(1) as cnt
+from c
+where c.station_type="Fast"
+group by c.city
+
+--45
+
+select c.city,avg(c.revenue) as AvgRevenue
+from c
+where c.revenue>8000
+group by c.city
+
+--46
+select c.station_type, sum(c.daily_sessions) as TotalDailySessions
+from c
+group by c.station_type
+
+--47
+select top 5 c.station_name,c.revenue
+from c
+order by c.revenue desc
+
+--48
+select top 3 c.station_name,c.daily_sessions
+from c
+order by c.daily_sessions desc
+
+--49
+select c.station_name
+from c
+where c.status="Active" and c.station_type="Fast"
+order by c.revenue desc
+
+--50
+select c.station_name,c.revenue,c.uptime_percent 
+from c
+where c.revenue>12000 and c.uptime_percent>97
+order by c.revenue desc
+
+--51
+select c.station_name,c.city,c.daily_sessions
+from c
+where (c.city="Hyderabad" or c.city="Bengaluru") and c.daily_sessions>30
+
+--52
+
+select c.station_name,c.status,c.uptime_percent
+from c
+where c.status="Maintenance"
+order by c.uptime_percent asc
+
+--53
+select c.station_name,c.city,c.revenue,c.uptime_percent
+from c
+where c.revenue>15000
+
+--54
+select c.station_name,c.station_type,c.capacity_kw
+from c
+where c.capacity_kw>=120 
+order by c.capacity_kw desc
+
+--55
+select c.city,sum(c.revenue) as total_revenue
+from c
+group by c.city
+-- order by sum(c.revenue) desc
+
+--56
+
+select top 1 c.station_name,c.revenue
+from c
+order by c.revenue desc
+
+
+--57
+select top 1 c.station_name,c.uptime_percent
+from c
+order by c.uptime_percent asc
+
+--58
+select c.station_type,avg(c.revenue) as Avg_revenue
+from c
+group by c.station_type
+-- order by avg(c.revenue) desc
+
+--59
+select c.city, sum(c.daily_sessions) as total_sessions
+from c
+group by c.city
+-- order by sum(c.daily_sessions) desc
+
+--60
+
+select value count(1)
+from c
+where c.status="Maintenance"
