@@ -1,0 +1,28 @@
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be greater than or equal to 18
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be greater than or equal to 18
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be a valid integer, unable to parse string as an integer
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be a valid integer, unable to parse string as an integer
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be a valid integer, unable to parse string as an integer
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be a valid integer, unable to parse string as an integer
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
+INFO - Registration data R101 validated successfully
+ERROR - Registration R102: age , Input should be a valid integer, unable to parse string as an integer
+ERROR - Registration R103: amount , Input should be greater than 0
+INFO - Registration data R104 validated successfully
