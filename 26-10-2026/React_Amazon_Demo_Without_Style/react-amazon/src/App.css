@@ -1,0 +1,414 @@
+:root {
+  --amazon-navy: #131921;
+  --amazon-blue: #232f3e;
+  --amazon-yellow: #febd69;
+  --amazon-orange: #f3a847;
+  --page-bg: #e3e6e6;
+  --text: #0f1111;
+  --muted: #565959;
+  --border: #d5d9d9;
+  --link: #007185;
+  --card-bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--page-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  display: block;
+  border: 0;
+  text-align: left;
+  color: var(--text);
+  background: var(--page-bg);
+}
+
+header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto minmax(180px, 1fr);
+  align-items: center;
+  gap: 12px 24px;
+  padding: 12px max(20px, calc((100% - 1280px) / 2));
+  color: #fff;
+  background: var(--amazon-navy);
+}
+
+header > a:first-child {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+header form {
+  display: flex;
+  min-width: 0;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+}
+
+header form:focus-within {
+  outline: 3px solid var(--amazon-orange);
+}
+
+header form input {
+  width: 100%;
+  min-width: 0;
+  padding: 0 12px;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  font: inherit;
+}
+
+header form button {
+  min-width: 52px;
+  border: 0;
+  color: var(--amazon-navy);
+  background: var(--amazon-yellow);
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+header nav {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 30px;
+  overflow-x: auto;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+header nav a,
+header nav button {
+  padding: 5px 0;
+  border: 0;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+header nav a:hover,
+header nav button:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: min(1280px, calc(100% - 40px));
+  min-height: 60vh;
+  margin: 24px auto;
+  padding: 24px;
+  background: var(--card-bg);
+}
+
+main h1 {
+  margin: 0 0 16px;
+  color: var(--text);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+main h2 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+main p {
+  margin: 8px 0;
+  color: var(--muted);
+}
+
+main a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+main button {
+  min-height: 34px;
+  padding: 7px 14px;
+  border: 1px solid #fcd200;
+  border-radius: 20px;
+  color: var(--text);
+  background: #ffd814;
+  cursor: pointer;
+  font: inherit;
+}
+
+main button:hover {
+  background: #f7ca00;
+}
+
+main button:focus-visible,
+main a:focus-visible,
+header a:focus-visible,
+header button:focus-visible,
+header input:focus-visible,
+main input:focus-visible,
+main select:focus-visible {
+  outline: 3px solid #007185;
+  outline-offset: 2px;
+}
+
+main > section {
+  margin-bottom: 26px;
+}
+
+main > section:first-child {
+  padding: 28px;
+  background: #f3f3f3;
+}
+
+main > section:first-child h1 {
+  font-size: clamp(26px, 4vw, 38px);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.product-display {
+  min-width: 0;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.product-display img {
+  width: 100%;
+  height: 210px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.product-display p {
+  margin: 4px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.product-display h2 {
+  margin: 4px 0 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.product-display strong {
+  margin: 4px 0 12px;
+  color: #b12704;
+  font-size: 18px;
+}
+
+.product-display button {
+  margin-top: auto;
+}
+
+main > article {
+  margin: 14px 0;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 18px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+main > article img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+main > article h2 {
+  font-size: 17px;
+}
+
+main label {
+  display: block;
+  margin: 12px 0;
+  color: var(--text);
+}
+
+main input,
+main select {
+  min-height: 36px;
+  margin: 4px 0;
+  padding: 7px 9px;
+  border: 1px solid #888c8c;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+
+main form {
+  max-width: 520px;
+}
+
+main form > label input,
+main form > label select {
+  display: block;
+  width: 100%;
+}
+
+main fieldset {
+  margin: 16px 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+}
+
+main fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 7px 16px 7px 0;
+}
+
+main fieldset input {
+  min-height: auto;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  header > a:first-child {
+    font-size: 22px;
+  }
+
+  header form {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  header nav {
+    grid-column: 1 / -1;
+    gap: 16px;
+  }
+
+  main {
+    width: 100%;
+    margin: 12px 0;
+    padding: 18px 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .product-display {
+    padding: 10px;
+  }
+
+  .product-display img {
+    height: 150px;
+  }
+
+  main > article {
+    grid-template-columns: 85px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  main > article img {
+    width: 85px;
+    height: 85px;
+  }
+}
+/* Center the login form and its fields */
+main form:has(input[type="email"]) {
+  width: min(100%, 420px);
+  margin: 20px auto;
+}
+
+main form:has(input[type="email"]) label {
+  text-align: left;
+}
+
+main form:has(input[type="email"]) label input {
+  width: 100%;
+}
+
+/* Style the login/logout button and align it to the right of the nav */
+header nav button {
+  margin-left: auto;
+  padding: 7px 16px;
+  flex-shrink: 0;
+  border: 1px solid var(--amazon-yellow);
+  border-radius: 20px;
+  color: var(--text);
+  background: #ffd814;
+  font-weight: 700;
+}
+
+header nav button:hover {
+  background: #f7ca00;
+  text-decoration: none;
+}
+
+/* Align card payment labels and inputs in consistent columns. */
+main form > section label {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+main form > section label input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  main form > section label {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
