@@ -1,0 +1,2 @@
+timestamp,model,question,answer,retrieved_chunk_ids,best_distance,total_seconds,feedback
+2026-11-02T22:43:13,gpt-4o-mini,How many days of annual leave do full-time employees receive?,Full-time employees receive 18 days of paid annual leave per calendar year [chunk_003].,"chunk_003, chunk_002, chunk_001",0.3141,2.8,Not rated
