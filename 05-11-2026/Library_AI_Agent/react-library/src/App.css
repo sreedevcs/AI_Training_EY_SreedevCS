@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f8;
+  color: #202123;
+  font: 16px system-ui, sans-serif;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+}
+
+.chat-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: 600;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.welcome {
+  margin-top: 20vh;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.message {
+  max-width: 80%;
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.message.user {
+  margin-left: auto;
+  background: #f0f0f0;
+}
+
+.message.assistant {
+  margin-right: auto;
+  background: #eaf2ff;
+}
+
+.composer {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.composer textarea {
+  flex: 1;
+  resize: vertical;
+  min-height: 48px;
+  max-height: 180px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font: inherit;
+}
+
+.composer button {
+  padding: 0 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #202123;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.composer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

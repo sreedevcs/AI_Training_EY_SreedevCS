@@ -1,0 +1,72 @@
+[
+  {
+    "id": 101,
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "category": "Programming",
+    "available_copies": 1
+  },
+  {
+    "id": 102,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "available_copies": 5
+  },
+  {
+    "id": 103,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "category": "Programming",
+    "available_copies": 4
+  },
+  {
+    "id": 104,
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "category": "Computer Science",
+    "available_copies": 2
+  },
+  {
+    "id": 105,
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell",
+    "category": "AI",
+    "available_copies": 3
+  },
+  {
+    "id": 106,
+    "title": "Deep Learning",
+    "author": "Ian Goodfellow",
+    "category": "AI",
+    "available_copies": 2
+  },
+  {
+    "id": 107,
+    "title": "Database System Concepts",
+    "author": "Abraham Silberschatz",
+    "category": "Databases",
+    "available_copies": 5
+  },
+  {
+    "id": 108,
+    "title": "Computer Networks",
+    "author": "Andrew S. Tanenbaum",
+    "category": "Networking",
+    "available_copies": 4
+  },
+  {
+    "id": 109,
+    "title": "Operating System Concepts",
+    "author": "Abraham Silberschatz",
+    "category": "Operating Systems",
+    "available_copies": 3
+  },
+  {
+    "id": 110,
+    "title": "Design Patterns",
+    "author": "Erich Gamma",
+    "category": "Software Engineering",
+    "available_copies": 5
+  }
+]
