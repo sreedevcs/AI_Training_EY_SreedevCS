@@ -1,0 +1,38 @@
+timestamp,model,question,answer,retrieved_chunk_ids,best_distance,total_seconds,feedback
+2026-11-02T22:43:13,gpt-4o-mini,How many days of annual leave do full-time employees receive?,Full-time employees receive 18 days of paid annual leave per calendar year [chunk_003].,"chunk_003, chunk_002, chunk_001",0.3141,2.8,Not rated
+2026-11-03T08:52:50,gpt-4o-mini,How many days of annual leave do full-time employees receive?,Full-time employees receive 18 days of paid annual leave per calendar year [chunk_003].,"chunk_003, chunk_002, chunk_001",0.3141,2.88,Not rated
+2026-11-03T09:07:51,nvidia/nemotron-3-ultra-550b-a55b:free,How many days of annual leave do full-time employees receive?,Full-time employees receive 18 days of paid annual leave per calendar year [chunk_003].,"chunk_003, chunk_002, chunk_001",0.3141,9.97,Correct
+2026-11-03T09:15:44,gpt-4o-mini,How many days of annual leave do full-time employees receive?,Full-time employees receive 18 days of paid annual leave per calendar year. [chunk_003],"chunk_003, chunk_002, chunk_001",0.3141,4.54,Correct
+2026-11-03T09:16:58,dots-studio/dots-3-note-preview:free,How many days of annual leave do full-time employees receive?,"
+
+Full-time employees receive 18 days of paid annual leave per calendar year. [chunk_003]","chunk_003, chunk_002, chunk_001",0.3141,6.61,Correct
+2026-11-03T09:17:46,cohere/north-mini-code:free,How many days of annual leave do full-time employees receive?,Full-time employees receive **18 days of paid annual leave per calendar year** [chunk_003].,"chunk_003, chunk_002, chunk_001",0.3141,2.84,Correct
+2026-11-03T09:24:14,xingchen-agi/xing4.0-29b-a4b:free,How many days of annual leave do full-time employees receive?,"Full-time employees receive 18 days of paid annual leave per calendar year.
+
+Source: [chunk_003]","chunk_003, chunk_002, chunk_001",0.3141,11.19,Correct
+2026-11-12T18:51:04,nvidia/nemotron-3-ultra-550b-a55b:free,How many annual leaves?,Full-time employees receive 18 days of paid annual leave per calendar year [chunk_003][chunk_002].,"chunk_003, chunk_008, chunk_002",0.8146,5.77,Correct
+2026-11-12T18:52:05,nvidia/nemotron-3-ultra-550b-a55b:free,Annual travel allowance?,"I could not find that information in the document. The reference text describes business travel approval processes, expense claim procedures, and default flight class (economy), but does not specify an annual travel allowance or budget amount. The only annual budget mentioned is an illustrative learning budget of INR 20,000 for training [chunk_008].","chunk_008, chunk_007, chunk_003",0.5197,7.5,Correct
+2026-11-12T19:35:53,nvidia/nemotron-3-ultra-550b-a55b:free,What is the leave policy??,"Based on the provided document, BrightPath's leave policy includes two main types of leave:
+
+**Annual Leave** [chunk_002, chunk_003]:
+- Full-time employees receive **18 days of paid annual leave per calendar year**
+- Requests should be submitted in the employee portal **at least five working days** before the planned absence
+- Reporting managers normally approve/reject within **three working days**
+- Employees should make a **handover plan** before extended vacations
+- Unused annual leave carry-forward rules are specified in individual employment agreements (not defined in this guide)
+
+**Sick Leave** [chunk_003]:
+- Employees receive **eight days of paid sick leave per calendar year**
+- Must notify reporting manager on the **first day of absence**
+- If sick leave continues for **three consecutive working days or longer**, a medical certificate must be submitted to Human Resources
+- Sick leave requests are recorded in the employee portal
+
+The document notes this is a sample guide and does not cover maternity leave, parental leave, or other specific leave types [chunk_010].","chunk_003, chunk_002, chunk_010",0.4737,12.34,Correct
+2026-11-12T19:35:58,gpt-4o-mini,What is the leave policy??,"Full-time employees receive 18 days of paid annual leave per calendar year and eight days of paid sick leave per calendar year. Annual leave requests should be submitted in the employee portal at least five working days before the planned absence, while employees must notify their reporting manager on the first day of sick leave absence. If sick leave extends for three consecutive days or longer, a medical certificate is required [chunk_003].","chunk_003, chunk_002, chunk_010",0.4737,7.39,Incorrect
+2026-11-12T19:50:52,nvidia/nemotron-3-ultra-550b-a55b:free,Which are the types of available leaves?,"Based on the provided document, the types of leaves explicitly mentioned are:
+
+1. **Annual Leave** – Full-time employees receive 18 days of paid annual leave per calendar year [chunk_003]
+2. **Sick Leave** – Employees receive eight days of paid sick leave per calendar year [chunk_003]
+
+The guide also notes that it does **not** specify maternity leave, parental leave, or other leave types [chunk_010].","chunk_008, chunk_010, chunk_003",0.9346,11.5,Correct
+2026-11-12T19:50:54,gpt-4o-mini,Which are the types of available leaves?,I could not find that information in the provided document.,"chunk_008, chunk_010, chunk_003",0.9346,3.95,Incorrect
