@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+langchain-core
+langchain-huggingface
+transformers
+huggingface_hub
+torch
+redis
+requests
+python-dotenv
+rapidfuzz
