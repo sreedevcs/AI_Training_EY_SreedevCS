@@ -1,0 +1,58 @@
+==================================================
+EMPLOYEE TECHNOLOGY NEWS NOTIFICATION
+==================================================
+
+Subject: Cloud Computing Technology Update – Key Industry Developments
+
+Hello Team,
+
+Dear Team, Please find below a summary of recent developments in cloud computing that may impact our strategy and operations.
+
+
+LATEST TECHNOLOGY DEVELOPMENTS
+--------------------------------------------------
+
+1. Hyperscalers accelerating revenue growth and capital expenditure: AWS revenue grew 39% YoY with >40% expected through 2028, Oracle cloud infrastructure sales surged 121% to $7.4B, and Anthropic expanded Microsoft deal by $4.3B plus $41.3B in Lambda commitments through 2034.
+2. Enterprise cloud entering "value era": 64% of organizations now measure success by business value delivered (up 12pp YoY), 58% use generative AI as a public cloud service, hybrid cloud remains dominant at 73%, but estimated wasted IaaS/PaaS spend rose to 29%.
+3. AI driving next-generation cloud infrastructure: Google unveiled 8th-gen TPUs (TPU 8t for training, TPU 8i for agentic inference) and Managed Lustre storage delivering 10 TB/s, while donating OpenRL to CNCF to streamline reinforcement learning fine-tuning on Kubernetes.
+4. FedRAMP mandates new AI-era vulnerability rules: Certified cloud services must adopt Vulnerability Detection and Response (VDR) and Vulnerability Evaluation and Reporting (VER) by Dec 7, 2026, with grace period to March 7, 2027, quarterly emergency tests, and potential certification revocation for non-compliance.
+5. Microsoft global outage exposes systemic reliability risks: An 18-hour outage across Outlook, Teams, Copilot, Defender, Intune, and cloud-based Windows was caused by "a large number of servers being unexpectedly unavailable," marking the second major incident in months.
+
+
+SOURCES
+--------------------------------------------------
+
+1. www.fool.com
+   https://www.fool.com/investing/2026/11/10/amazon-cloud-computing-brings-in-more-revenue-than-476-companies-in-the-sp-500
+
+2. finance.yahoo.com
+   https://finance.yahoo.com/technology/articles/oracle-orcl-surging-cloud-revenue-192942521.html
+
+3. www.cloudcomputing-news.net
+   https://www.cloudcomputing-news.net/news/anthropic-microsoft-cloud-deal
+
+4. www.infoworld.com
+   https://www.infoworld.com/article/4248511/cloud-reports-measure-the-wrong-thing.html
+
+5. cloud.google.com
+   https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26
+
+6. www.scworld.com
+   https://www.scworld.com/brief/google-contributes-openrl-to-cloud-native-computing-foundation-to-streamline-ai-fine-tuning
+
+7. federalnewsnetwork.com
+   https://federalnewsnetwork.com/cybersecurity/2026/11/fedramp-pushes-new-cyber-vulnerability-rules-to-keep-pace-with-ai
+
+8. techcrunch.com
+   https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis
+
+
+Best regards,
+[Your Name]
+[Your Title]
+[Company Name]
+
+Best Regards,
+Technology News Assistant
+
+==================================================

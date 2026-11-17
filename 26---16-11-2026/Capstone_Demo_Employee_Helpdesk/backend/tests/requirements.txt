@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+psycopg_binary
+psycopg_pool
+pydantic
+pydantic-settings
+python-dotenv
+httpx
+pytest
+torch
+transformers
+accelerate
+huggingface_hub
+langchain
+langchain-core
+langchain-huggingface
